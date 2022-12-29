@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: rgb(68, 0, 62);
+  --primary-color-darker: rgb(34, 0, 31);
+} /* Assim cria-se uma variavel no escopo global do CSS */
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(44, 53, 173),
+    rgb(68, 4, 105)
+  );
+  /* background: var(--primary-color); */
+  font-family: "Open sans", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+} /* assim chama a classe dentro do HTML */
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background-color: var(--primary-color-darker);
+}
